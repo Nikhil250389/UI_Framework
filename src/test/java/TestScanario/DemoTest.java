@@ -1,5 +1,8 @@
 package TestScanario;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.List;
 
@@ -35,13 +38,17 @@ public class DemoTest extends BaseTest {
 
 	}
 
-	@Test(enabled=false)
-	public void test1() throws InterruptedException {
+	@Test(enabled=true)
+	public void test1() throws InterruptedException, AWTException {
 		Homepage hp = new Homepage(driver);
 		Actions action = new Actions(driver);
-
-		action.moveToElement(hp.searchtheproperty()).sendKeys("Western Cape").sendKeys(Keys.ENTER).build().perform();
-     	WebDriverWait wait = new WebDriverWait(driver,10);
+		Robot robot= new Robot();
+		WebDriverWait wait = new WebDriverWait(driver,10);
+		
+		action.moveToElement(hp.searchtheproperty()).sendKeys("Western Cape").build().perform();
+		Thread.sleep(3000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		wait.until(ExpectedConditions.visibilityOf(hp.searchResults()));
      	wait.until(ExpectedConditions.elementToBeClickable(hp.clickfindpropertyforsale()));
 		hp.clickfindpropertyforsale().click();
 		wait.until(ExpectedConditions.elementToBeClickable(hp.selectpropertytypes()));
@@ -68,13 +75,17 @@ public class DemoTest extends BaseTest {
 	}
 
 	@Test
-public void test2() throws InterruptedException {
+	public void test2() throws InterruptedException, AWTException{
 	Homepage hp = new Homepage(driver);
 	Actions action = new Actions(driver);
-
-	action.moveToElement(hp.searchtheproperty()).sendKeys("Western Cape.").sendKeys(Keys.ENTER).build().perform();
- 	WebDriverWait wait = new WebDriverWait(driver,10);
- 	wait.until(ExpectedConditions.elementToBeClickable(hp.clickfindpropertyforsale()));
+	Robot robot= new Robot();
+	WebDriverWait wait = new WebDriverWait(driver,10);
+	
+	action.moveToElement(hp.searchtheproperty()).sendKeys("Western Cape").build().perform();
+	Thread.sleep(3000);
+	robot.keyPress(KeyEvent.VK_ENTER);
+	wait.until(ExpectedConditions.visibilityOf(hp.searchResults()));
+	wait.until(ExpectedConditions.elementToBeClickable(hp.clickfindpropertyforsale()));
 	hp.clickfindpropertyforsale().click();
 	wait.until(ExpectedConditions.elementToBeClickable(hp.selectpropertytypes()));
 	hp.selectpropertytypes().click();
@@ -132,7 +143,7 @@ public void test2() throws InterruptedException {
 	JavascriptExecutor jse = (JavascriptExecutor)driver;
 	jse.executeScript("window.scrollBy(0,100)");
 	sr.clickonorderby().click();
-	wait.until(ExpectedConditions.elementToBeClickable(hp.selectispetfriendly()));
+	//wait.until(ExpectedConditions.elementToBeClickable(hp.selectispetfriendly()));
 	sr.selectmostrecent().click();
 	
 	

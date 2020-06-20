@@ -80,7 +80,10 @@ public class Homepage extends BaseTest {
     @FindBy(xpath= "//div[@id='GarageOnly']//button")
     WebElement parkingtype;
     
-
+  
+    @FindBy(xpath= "//*[@id='SearchBarCounter']")
+    WebElement searchResults;
+    
     @FindBy(xpath= "(//div[@id='GarageOnly']//ul/li)[3]")
     WebElement parkingtypegarage;
     
@@ -90,6 +93,12 @@ public class Homepage extends BaseTest {
 
     @FindBy(xpath= "//input[@id='HasFlatlet']/../..")
     WebElement hasflatet;
+    
+    public WebElement searchResults() {
+		return searchResults;
+	}
+    
+    
     
 	public WebElement searchtheproperty() {
 		return search;

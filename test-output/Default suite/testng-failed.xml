@@ -6,8 +6,8 @@
       <class name="TestScanario.DemoTest">
         <methods>
           <include name="setUP"/>
+          <include name="test1"/>
           <include name="tearDown"/>
-          <include name="test2"/>
         </methods>
       </class> <!-- TestScanario.DemoTest -->
     </classes>
