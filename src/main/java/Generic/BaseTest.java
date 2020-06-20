@@ -47,7 +47,7 @@ driver.get(utilities.getPropertyValue(configProperty, "url"));
 @AfterMethod(alwaysRun=true)
 public void tearDown() {
 System.out.println("I am clossing Browser ");
-//driver.quit();
+driver.quit();
 }
 
 	
