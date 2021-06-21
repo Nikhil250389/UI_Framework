@@ -1,37 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="4" total="6" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52010" started-at="2020-06-20T05:18:09Z" finished-at="2020-06-20T05:19:01Z">
+  <suite name="Suite" duration-ms="109363" started-at="2021-06-21T17:34:55Z" finished-at="2021-06-21T17:36:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52010" started-at="2020-06-20T05:18:09Z" finished-at="2020-06-20T05:19:01Z">
-      <class name="TestScanario.DemoTest">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:TestScanario.DemoTest@36d4b5c]" name="setUP" is-config="true" duration-ms="11839" started-at="2020-06-20T10:48:09Z" finished-at="2020-06-20T10:48:21Z">
+    <test name="Test" duration-ms="68484" started-at="2021-06-21T17:34:55Z" finished-at="2021-06-21T17:36:03Z">
+      <class name="TestScanario.TestLogin">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="setUP" is-config="true" duration-ms="16403" started-at="2021-06-21T23:04:55Z" finished-at="2021-06-21T23:05:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:TestScanario.DemoTest@36d4b5c]" name="test1" duration-ms="8412" started-at="2020-06-20T10:48:21Z" finished-at="2020-06-20T10:48:29Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="Login" duration-ms="583" started-at="2021-06-21T23:05:11Z" finished-at="2021-06-21T23:05:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScanario.DemoTest@36d4b5c]" name="tearDown" is-config="true" duration-ms="677" started-at="2020-06-20T10:48:29Z" finished-at="2020-06-20T10:48:30Z">
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="tearDown" is-config="true" duration-ms="901" started-at="2021-06-21T23:05:12Z" finished-at="2021-06-21T23:05:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUP()[pri:0, instance:TestScanario.DemoTest@36d4b5c]" name="setUP" is-config="true" duration-ms="10545" started-at="2020-06-20T10:48:30Z" finished-at="2020-06-20T10:48:41Z">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="setUP" is-config="true" duration-ms="12667" started-at="2021-06-21T23:05:13Z" finished-at="2021-06-21T23:05:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:TestScanario.DemoTest@36d4b5c]" name="test2" duration-ms="19833" started-at="2020-06-20T10:48:41Z" finished-at="2020-06-20T10:49:00Z">
+        <test-method status="FAIL" signature="LoginPageTitle()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="LoginPageTitle" duration-ms="31" started-at="2021-06-21T23:05:25Z" finished-at="2021-06-21T23:05:25Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Nikhil] but found [Arttha]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Nikhil] but found [Arttha]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestScanario.TestLogin.LoginPageTitle(TestLogin.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScanario.DemoTest@36d4b5c]" name="tearDown" is-config="true" duration-ms="681" started-at="2020-06-20T10:49:01Z" finished-at="2020-06-20T10:49:01Z">
+        </test-method> <!-- LoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="tearDown" is-config="true" duration-ms="916" started-at="2021-06-21T23:05:26Z" finished-at="2021-06-21T23:05:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestScanario.DemoTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="setUP" is-config="true" duration-ms="17448" started-at="2021-06-21T23:05:27Z" finished-at="2021-06-21T23:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="FAIL" signature="LoginPageTitle()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="LoginPageTitle" duration-ms="48" started-at="2021-06-21T23:05:44Z" finished-at="2021-06-21T23:05:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Nikhil] but found [Arttha]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Nikhil] but found [Arttha]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestScanario.TestLogin.LoginPageTitle(TestLogin.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="tearDown" is-config="true" duration-ms="886" started-at="2021-06-21T23:05:45Z" finished-at="2021-06-21T23:05:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="setUP" is-config="true" duration-ms="15981" started-at="2021-06-21T23:05:46Z" finished-at="2021-06-21T23:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="FAIL" signature="LoginPageTitle()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="LoginPageTitle" duration-ms="19" started-at="2021-06-21T23:06:02Z" finished-at="2021-06-21T23:06:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Nikhil] but found [Arttha]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Nikhil] but found [Arttha]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestScanario.TestLogin.LoginPageTitle(TestLogin.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1049)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1254)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScanario.TestLogin@37f1104d]" name="tearDown" is-config="true" duration-ms="920" started-at="2021-06-21T23:06:02Z" finished-at="2021-06-21T23:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestScanario.TestLogin -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="40496" started-at="2021-06-21T17:36:04Z" finished-at="2021-06-21T17:36:44Z">
+      <class name="TestScanario.TestLogin">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:TestScanario.TestLogin@46fa7c39]" name="setUP" is-config="true" duration-ms="23626" started-at="2021-06-21T23:06:04Z" finished-at="2021-06-21T23:06:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:TestScanario.TestLogin@46fa7c39]" name="Login" duration-ms="554" started-at="2021-06-21T23:06:27Z" finished-at="2021-06-21T23:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScanario.TestLogin@46fa7c39]" name="tearDown" is-config="true" duration-ms="872" started-at="2021-06-21T23:06:28Z" finished-at="2021-06-21T23:06:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP()[pri:0, instance:TestScanario.TestLogin@46fa7c39]" name="setUP" is-config="true" duration-ms="13949" started-at="2021-06-21T23:06:29Z" finished-at="2021-06-21T23:06:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="FAIL" signature="LoginPageTitle()[pri:0, instance:TestScanario.TestLogin@46fa7c39]" name="LoginPageTitle" duration-ms="28" started-at="2021-06-21T23:06:43Z" finished-at="2021-06-21T23:06:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Nikhil] but found [Arttha]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Nikhil] but found [Arttha]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at TestScanario.TestLogin.LoginPageTitle(TestLogin.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScanario.TestLogin@46fa7c39]" name="tearDown" is-config="true" duration-ms="925" started-at="2021-06-21T23:06:43Z" finished-at="2021-06-21T23:06:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestScanario.TestLogin -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>

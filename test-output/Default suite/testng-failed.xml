@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestScanario.DemoTest">
+      <class name="TestScanario.TestLogin">
         <methods>
           <include name="setUP"/>
-          <include name="test1"/>
-          <include name="tearDown"/>
+          <include name="LoginPageTitle"/>
         </methods>
-      </class> <!-- TestScanario.DemoTest -->
+      </class> <!-- TestScanario.TestLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

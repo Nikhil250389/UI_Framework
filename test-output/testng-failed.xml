@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.Listeners.Listneners"/>
+    <listener class-name="com.RetryListener.RetryListner"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
-      <class name="TestScanario.DemoTest">
+      <class name="TestScanario.TestLogin">
         <methods>
           <include name="setUP"/>
-          <include name="test1"/>
+          <include name="setUP"/>
           <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="LoginPageTitle"/>
         </methods>
-      </class> <!-- TestScanario.DemoTest -->
+      </class> <!-- TestScanario.TestLogin -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+  <test name="Test2(failed)">
+    <classes>
+      <class name="TestScanario.TestLogin">
+        <methods>
+          <include name="setUP"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="LoginPageTitle"/>
+        </methods>
+      </class> <!-- TestScanario.TestLogin -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
