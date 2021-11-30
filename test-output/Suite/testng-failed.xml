@@ -10,25 +10,10 @@
       <class name="TestScanario.TestLogin">
         <methods>
           <include name="setUP"/>
-          <include name="setUP"/>
-          <include name="tearDown"/>
           <include name="tearDown"/>
           <include name="LoginPageTitle"/>
         </methods>
       </class> <!-- TestScanario.TestLogin -->
     </classes>
   </test> <!-- Test(failed) -->
-  <test name="Test2(failed)">
-    <classes>
-      <class name="TestScanario.TestLogin">
-        <methods>
-          <include name="setUP"/>
-          <include name="setUP"/>
-          <include name="tearDown"/>
-          <include name="tearDown"/>
-          <include name="LoginPageTitle"/>
-        </methods>
-      </class> <!-- TestScanario.TestLogin -->
-    </classes>
-  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -42,7 +42,7 @@ public class Listneners extends BaseTest implements ITestListener {
 		
 	}
 	
-			try {
+	try {
 				
 				extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName,driver), result.getMethod().getMethodName());
 				

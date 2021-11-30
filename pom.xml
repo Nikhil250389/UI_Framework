@@ -22,25 +22,56 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
+			<version>3.11.0</version>
 		</dependency>
+
+
 
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.6</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.8</version>
+			<version>6.9.10</version>
 			<scope>test</scope>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-		
+
+		<dependency>
+
+			<groupId>org.postgresql</groupId>
+
+			<artifactId>postgresql</artifactId>
+
+			<version>42.2.18</version>
+
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.postgis/postgis-jdbc -->
+
+
+
+
+		<dependency>
+
+			<groupId>net.postgis</groupId>
+
+			<artifactId>postgis-jdbc</artifactId>
+
+			<version>2.2.1</version>
+
+		</dependency>
 
 		<dependency>
 
