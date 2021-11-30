@@ -116,7 +116,7 @@
 
 					<suiteXmlFiles>
 
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>Retry.xml</suiteXmlFile>
 
 					</suiteXmlFiles>
 
