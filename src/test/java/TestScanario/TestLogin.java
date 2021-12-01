@@ -37,7 +37,7 @@ public class TestLogin extends BaseTest {
 		login.clickLoginButton();
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void LoginPageTitle() throws Exception {
 		log.info("Login PageTitle test");
 		login = new PaylaterLogin(driver);

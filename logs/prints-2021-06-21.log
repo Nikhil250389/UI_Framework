@@ -1,8 +1,0 @@
-23:04:55.327 [main] INFO  com.SetUp.BaseTest - launchBrowser
-23:05:11.756 [main] INFO  com.SetUp.BaseTest - Login Positive test
-23:05:13.214 [main] INFO  com.SetUp.BaseTest - launchBrowser
-23:05:25.885 [main] INFO  com.SetUp.BaseTest - Login PageTitle test
-23:05:27.436 [main] INFO  com.SetUp.BaseTest - launchBrowser
-23:05:44.892 [main] INFO  com.SetUp.BaseTest - Login PageTitle test
-23:05:46.391 [main] INFO  com.SetUp.BaseTest - launchBrowser
-23:06:02.375 [main] INFO  com.SetUp.BaseTest - Login PageTitle test

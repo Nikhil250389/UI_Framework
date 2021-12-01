@@ -1,0 +1,8 @@
+22:15:27.630 [main] INFO  com.SetUp.BaseTest - clicking on create new bank button
+22:15:28.720 [main] INFO  com.SetUp.BaseTest - launchBrowser
+22:15:39.320 [main] INFO  com.SetUp.BaseTest - Login PageTitle test
+22:15:40.838 [main] INFO  com.SetUp.BaseTest - launchBrowser
+22:15:50.599 [main] INFO  com.SetUp.BaseTest - Login PageTitle test
+22:15:51.924 [main] INFO  com.SetUp.BaseTest - launchBrowser
+22:16:01.173 [main] INFO  com.SetUp.BaseTest - Login PageTitle test
+22:16:25.919 [main] INFO  com.SetUp.BaseTest - launchBrowser

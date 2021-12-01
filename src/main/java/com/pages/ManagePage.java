@@ -1,0 +1,62 @@
+package com.pages;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.SetUp.BaseTest;
+
+public class ManagePage extends BaseTest {
+
+	public static Logger log = LogManager.getLogger(BaseTest.class.getName());
+	public WebDriver driver;
+
+	public ManagePage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+
+	}
+
+	@FindBy(xpath = "//div[@class='logged-person-content']")
+	private WebElement homepageIconName;
+
+	@FindBy(xpath = "//div[@class='mat-list-text']//span[contains(text(),'Role Management')]")
+	private WebElement roleManagement;
+
+	@FindBy(xpath = "//div[@class='sub-menu-column ng-star-inserted'][2]")
+	private WebElement userTab;
+	@FindBy(xpath = "//button[@class='mat-fab mat-accent']")
+	private WebElement createbutton;
+
+	//button[@class='mat-fab mat-accent']
+	public void enterPassword(String Password) {
+		log.info("Enter password");
+//		password.sendKeys(Password);
+
+	}
+
+	public void clickOnRoleManagement() {
+		log.info("clicking on Role Management");
+		roleManagement.click();
+	}
+	public void userTab() {
+		log.info("clicking on User Tab");
+		userTab.click();
+	}
+
+
+
+	public WebElement createbutton() {
+		log.info("Enter password");
+		return createbutton;
+
+	}
+
+	public WebElement HomePageIconName() {
+		log.info("Home page User Icon name");
+		return  homepageIconName;
+	}
+}
