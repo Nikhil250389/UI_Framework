@@ -35,6 +35,7 @@ public class TestLogin extends BaseTest {
 		login.setUserName(Utilities.getPropertyValue(configProperty, "username"));
 		login.enterPassword(Utilities.getPropertyValue(configProperty, "password"));
 		login.clickLoginButton();
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 2)

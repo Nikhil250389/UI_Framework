@@ -1,0 +1,8 @@
+23:04:10.987 [main] INFO  com.SetUp.BaseTest - Login Positive test
+23:04:11.092 [main] INFO  com.SetUp.BaseTest - setting userName...
+23:04:11.384 [main] INFO  com.SetUp.BaseTest - Enter password
+23:04:11.568 [main] INFO  com.SetUp.BaseTest - clicking on create new bank button
+23:04:45.007 [main] INFO  com.SetUp.BaseTest - launchBrowser
+23:04:58.080 [main] INFO  com.SetUp.BaseTest - Login Positive test
+23:04:58.126 [main] INFO  com.SetUp.BaseTest - setting userName...
+23:04:58.315 [main] INFO  com.SetUp.BaseTest - Enter password

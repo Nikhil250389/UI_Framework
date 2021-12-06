@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="TestScanario.CreateRoleTest"/>
-    </classes>
-  </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="TestScanario.CreateRoleTest">
+      <class name="TestScanario.TestLogin">
         <methods>
-          <include name="setUP"/>
           <include name="Login"/>
         </methods>
-      </class> <!-- TestScanario.CreateRoleTest -->
+      </class> <!-- TestScanario.TestLogin -->
     </classes>
-  </test> <!-- Default test(failed) -->
+  </test> <!-- Default test -->
 </suite> <!-- Failed suite [Default suite] -->
