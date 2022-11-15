@@ -1,5 +1,7 @@
 package com.pages;
 
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -20,43 +22,27 @@ public class ManagePage extends BaseTest {
 
 	}
 
-	@FindBy(xpath = "//div[@class='logged-person-content']")
-	private WebElement homepageIconName;
+	@FindBy(xpath = "//span[contains(text(),'Deposit Management')]")
+	private WebElement depositManagementModule;
 
-	@FindBy(xpath = "//div[@class='mat-list-text']//span[contains(text(),'Role Management')]")
-	private WebElement roleManagement;
+	@FindBy(xpath = "//div[@class='home-menu-column ng-star-inserted']")
+	private List<WebElement> homePageAllModule;
 
-	@FindBy(xpath = "//div[@class='sub-menu-column ng-star-inserted'][2]")
-	private WebElement userTab;
-	@FindBy(xpath = "//button[@class='mat-fab mat-accent']")
-	private WebElement createbutton;
+	@FindBy(xpath = "//div[contains(text(),'Manage')]")
+	private WebElement manageTab;
 
-	//button[@class='mat-fab mat-accent']
-	public void enterPassword(String Password) {
-		log.info("Enter password");
-//		password.sendKeys(Password);
-
-	}
-
-	public void clickOnRoleManagement() {
-		log.info("clicking on Role Management");
-		roleManagement.click();
-	}
-	public void userTab() {
-		log.info("clicking on User Tab");
-		userTab.click();
-	}
+	
+	
+	
+	
 
 
-
-	public WebElement createbutton() {
-		log.info("Enter password");
-		return createbutton;
+	public WebElement depositManagementModule() {
+		log.info("Click On User Management module");
+		return depositManagementModule;
 
 	}
 
-	public WebElement HomePageIconName() {
-		log.info("Home page User Icon name");
-		return  homepageIconName;
-	}
+	
+	
 }

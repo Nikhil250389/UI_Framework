@@ -1,0 +1,8 @@
+13:08:06.320 [main] INFO  com.SetUp.BaseTest - Enter User Negative Value
+13:08:06.332 [main] INFO  com.SetUp.BaseTest - Enter user Name
+13:08:06.449 [main] INFO  com.SetUp.BaseTest - Enter user password
+13:08:06.574 [main] INFO  com.SetUp.BaseTest - Click on Login Now Button
+13:08:57.557 [main] INFO  com.SetUp.BaseTest - launchBrowser
+13:09:05.444 [main] INFO  com.SetUp.BaseTest - Enter User Negative password Value
+13:09:05.444 [main] INFO  com.SetUp.BaseTest - Enter user Name
+13:09:05.550 [main] INFO  com.SetUp.BaseTest - Enter user password

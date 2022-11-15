@@ -1,0 +1,8 @@
+13:19:51.022 [main] INFO  com.SetUp.BaseTest - launchBrowser
+13:20:00.547 [main] INFO  com.SetUp.BaseTest - login Page Ui Test
+13:20:00.548 [main] INFO  com.SetUp.BaseTest - Home page User logo name
+13:20:01.495 [main] INFO  com.SetUp.BaseTest - launchBrowser
+13:20:09.178 [main] INFO  com.SetUp.BaseTest - Enter User Positive Value
+13:20:09.178 [main] INFO  com.SetUp.BaseTest - Enter user Name
+13:20:09.311 [main] INFO  com.SetUp.BaseTest - Enter user password
+13:20:09.427 [main] INFO  com.SetUp.BaseTest - Click on Login Now Button

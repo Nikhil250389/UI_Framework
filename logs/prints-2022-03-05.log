@@ -1,0 +1,7 @@
+23:09:17.448 [main] INFO  com.SetUp.BaseTest - Validate the deposit Management Tab
+23:09:17.475 [main] INFO  com.SetUp.BaseTest - Click on Manage Tab
+23:09:18.918 [main] INFO  com.SetUp.BaseTest - Click On User Management module
+23:09:19.321 [main] INFO  com.SetUp.BaseTest - Click On User Management module
+23:10:17.386 [main] INFO  com.SetUp.BaseTest - launchBrowser
+23:11:23.634 [main] INFO  com.SetUp.BaseTest - launchBrowser
+23:11:35.664 [main] INFO  com.SetUp.BaseTest - User login the application with valid username and password

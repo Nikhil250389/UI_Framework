@@ -1,8 +1,0 @@
-12:06:34.444 [main] INFO  com.SetUp.BaseTest - clicking on create new bank button
-12:06:34.840 [main] INFO  com.SetUp.BaseTest - Home page User Icon name
-12:06:42.922 [main] INFO  com.SetUp.BaseTest - Home page User Icon name
-12:06:42.993 [main] INFO  com.SetUp.BaseTest - clicking on Manage Tab
-12:14:02.404 [main] INFO  com.SetUp.BaseTest - launchBrowser
-12:27:27.141 [main] INFO  com.SetUp.BaseTest - launchBrowser
-13:50:10.311 [main] INFO  com.SetUp.BaseTest - launchBrowser
-13:50:37.922 [main] INFO  com.SetUp.BaseTest - Login Positive test
